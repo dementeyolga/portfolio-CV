@@ -1,5 +1,5 @@
-import Link from "next/link";
-import s from "./button.module.scss";
+import Link from 'next/link';
+import classes from './button.module.scss';
 
 export default function Button({
   href,
@@ -9,7 +9,7 @@ export default function Button({
   children: string;
 }) {
   return (
-    <Link href={href || ""} className={s.button}>
+    <Link href={href || ''} className={classes.button}>
       {children}
     </Link>
   );

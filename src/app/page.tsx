@@ -1,12 +1,12 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Avatar from "./ui/shared/avatar";
+import Avatar from '@/app/ui/shared/avatar/avatar';
+import classes from './page.module.scss';
+import clsx from 'clsx';
 
 export default function MainPage() {
   return (
-    <main>
+    <main className={clsx(classes.page, 'wrapper')}>
       <div>
-        <Avatar/>
+        <Avatar />
       </div>
     </main>
   );

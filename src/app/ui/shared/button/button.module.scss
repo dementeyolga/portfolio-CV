@@ -1,5 +1,13 @@
 .button {
   display: flex;
-  padding: 5px 7px;
+  padding: 5px 10px;
   border: 2px solid var(--color-accent);
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius-small);
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+  }
 }
